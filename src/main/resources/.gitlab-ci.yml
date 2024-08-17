@@ -23,8 +23,8 @@ sonarcloud:
   script:
     - echo "Running SonarCloud analysis..."
     - ./mvnw verify sonar:sonar \
-        -Dsonar.projectKey=your_project_key \
-        -Dsonar.organization=your_organization_key \
+        -Dsonar.projectKey=nkrcivil19 \
+        -Dsonar.organization=nkrcivil19 \
         -Dsonar.host.url=https://sonarcloud.io \
         -Dsonar.login=$SONAR_TOKEN
   only:
