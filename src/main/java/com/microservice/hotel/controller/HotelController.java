@@ -14,8 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.microservice.hotel.entity.Hotel;
 import com.microservice.hotel.service.HotelService;
 
+import ch.qos.logback.classic.Logger;
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
 @RequestMapping("/hotels")
+@Slf4j
 public class HotelController {
 
 	
@@ -35,6 +39,7 @@ public class HotelController {
 	// get single
 	@GetMapping("/{id}")
 	public ResponseEntity<Hotel> getHotel(@PathVariable String id){
+		log.info("This is an info log message");
 		return ResponseEntity.status(HttpStatus.OK).body(hotelservice.getHotel(id));
 		
 	}
