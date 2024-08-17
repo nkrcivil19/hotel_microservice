@@ -1,0 +1,14 @@
+server:
+  port: 1234
+spring:
+  application:
+   name: HotelService-microservice
+  datasource:
+   url: jdbc:postgresql://localhost:5432/hotelservice
+   username: postgres
+   password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      
