@@ -41,6 +41,16 @@ public class HotelController {
 	public ResponseEntity<Hotel> getHotel(@PathVariable String id){
 		log.info("This is an info log message");
 		log.info("This is an info log message");
+		log.info("This is an info log message");
+		log.info("This is an info log message");
+		log.info("This is an info log message");
+		log.info("This is an info log message");
+		log.info("This is an info log message");
+		log.info("This is an info log message");
+		log.info("This is an info log message");
+		log.info("This is an info log message");
+		log.info("This is an info log message");
+		log.info("This is an info log message");
 		return ResponseEntity.status(HttpStatus.OK).body(hotelservice.getHotel(id));
 		
 	}
