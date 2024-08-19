@@ -46,6 +46,7 @@ public class HotelController {
 	// get all
 @GetMapping("/")
 public ResponseEntity<List<Hotel>> getAll(){
+	log.info("This is an info log message");
 	return ResponseEntity.ok(hotelservice.getAllHotel());
 	
 }
