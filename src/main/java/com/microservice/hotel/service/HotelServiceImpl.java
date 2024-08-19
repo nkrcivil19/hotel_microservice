@@ -29,7 +29,7 @@ public class HotelServiceImpl implements HotelService{
 
 	@Override
 	public List<Hotel> getAllHotel() {
-		List<Hotel> getall = hotelrepo.findAll();	
+		List<Hotel> getall = hotelrepo.findAll();
 		if(!getall.isEmpty())
 		{
 			return getall;
